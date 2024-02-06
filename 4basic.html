@@ -846,15 +846,15 @@ tr:hover {background-color: #D6EEEE;}
 <head>
 <style>
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333333;
 }
 
 li {
-  float: left;
+float: left;
 }
 
 li a {
@@ -881,8 +881,272 @@ background-color: #111111;
 
 </body>
 </html>
+<ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+<ol type="1">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+<ol type="A">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+<ol type="a">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+<ol type="I">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+<ol type="i">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+<ol start="50">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+<ol>
+    <li>Coffee</li>
+    <li>Tea
+    <ol>
+        <li>Black tea</li>
+        <li>Green tea</li>
+    </ol>
+    </li>
+    <li>Milk</li>
+</ol>
+<dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+</dl>
 
+<p>Hello World</p>
+<div>Hello World</div>
+<span>Hello World</span>
+<div style="background-color:black;color:white;padding:20px;">
+    <h2>London</h2>
+    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+<p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+Lorem Ipsum <div>I am a div</div> dolor sit amet.
+<div>
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 13 million inhabitants.</p>
+</div>
+<style>
+    div {
+    width:300px;
+    margin:auto;
+    }
+    </style>
+<div>
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 13 million inhabitants.</p>
+</div>
 
+<div>
+    <h2>Oslo</h2>
+    <p>Oslo is the capital city of Norway.</p>
+    <p>Oslo has over 600.000 inhabitants.</p>
+</div>
+
+<div>
+    <h2>Rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+    <p>Rome has almost 3 million inhabitants.</p>
+</div>
+<style>
+    .mycontainer {
+    width:100%;
+    overflow:auto;
+    }
+    .mycontainer div {
+    width:33%;
+    float:left;
+    }
+    </style>
+<style>
+    div {
+    width: 30%;
+    display: inline-block;
+    }
+    </style>
+<style>
+    .mycontainer {
+    display: flex;
+    }
+    .mycontainer > div {
+    width:33%;
+    }
+    </style>
+<style>
+    .grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    }
+    </style>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+background-color: tomato;
+color: white;
+border: 2px solid black;
+margin: 20px;
+padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+<h2>London</h2>
+<p>London is the capital of England.</p>
+</div>
+
+<div class="city">
+<h2>Paris</h2>
+<p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.note {
+font-size: 120%;
+color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+background-color: tomato;
+color: white;
+padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+</body>
+</html>
+
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France</p>
+
+<script>
+    function myFunction() {
+    var x = document.getElementsByClassName("city");
+    for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    }
+    </script>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+background-color: lightblue;
+color: black;
+padding: 40px;
+text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1 id="myHeader">My Header</h1>
+
+</body>
+</html>
+<style>
+    /* Style the element with the id "myHeader" */
+    #myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+    }
+    
+    /* Style all elements with the class name "city" */
+    .city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+    }
+    </style>
+    
+    <!-- An element with a unique id -->
+    <h1 id="myHeader">My Cities</h1>
+    
+    <!-- Multiple elements with same class -->
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+    
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+    
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+    <h2 id="C4">Chapter 4</h2>
+
+    <a href="#C4">Jump to Chapter 4</a>
+    <a href="html_demo.html#C4">Jump to Chapter 4</a>
+    <script>
+        function displayResult() {
+        document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        }
+        </script>
 
 
 
